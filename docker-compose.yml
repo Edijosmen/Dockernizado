@@ -5,7 +5,7 @@ services :
     image: "backend-image"
     build: "./apiFileUpload"
     restart: "always"
-    env_file: "./apiFileUpload/apiFileUpload/.env.example"
+    env_file: "./apiFileUpload/apiFileUpload/.env"
     command: python manage.py runserver 0.0.0.0:8000
     ports:
       - "8000:8000"
